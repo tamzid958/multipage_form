@@ -23,8 +23,6 @@ $(document).ready(function(){
     TweenMax.to(".div1", 1, { opacity:1 , delay:2 });
     }
 		else $('div.div1').hide();
-    }).change();
-    
-    
-});
-
+    }).change();   
+  }
+);
