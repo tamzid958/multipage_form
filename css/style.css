@@ -389,12 +389,9 @@ a:hover{
   
 	
 	#msform {
-		width: 80%;
+		width: 70%;
 	}
-	.creator{
-	left: -4px;
-
-	}
+	
   }
 
 
@@ -405,21 +402,13 @@ a:hover{
 	#msform {
 		width: 80%;
 	}
-	.creator{
-	left: -44px;
-
-	}
+	
   }
   @media (max-width: 767px) {
   
 	#msform {
 		width: 100%;
 	}
-	.creator{
-		left: -75px;
-		top:210px;
-	
-		}
 	
   }
   
