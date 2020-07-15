@@ -31,7 +31,7 @@ body {
 	margin: 0 10%;
 	background-color: #485461;
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
-	/*stacking fieldsets above each other*/
+
 	position: relative;
 }
 #msform fieldset:not(:first-of-type) {
@@ -75,7 +75,7 @@ label {
     box-shadow: 0 0 0 2px white, 0 0 0 3px #485461;
    
 }
-/*headings*/
+
 .fs-title {
 	font-size: 15px;
 	text-transform: uppercase;
@@ -88,11 +88,11 @@ label {
 
 	margin-bottom: 20px;
 }
-/*progressbar*/
+
 #progressbar {
 	margin-bottom: 30px;
 	overflow: hidden;
-	/*CSS counters to number the steps*/
+
 	counter-reset: step;
 }
 #progressbar li {
@@ -115,7 +115,7 @@ label {
 	border-radius: 3px;
 	margin: 0 auto 5px auto;
 }
-/*progressbar connectors*/
+
 #progressbar li:after {
 	content: '';
 	width: 100%;
@@ -127,11 +127,10 @@ label {
 	z-index: -1;
 }
 #progressbar li:first-child:after {
-	/*connector not needed before the first step*/
+	
 	content: none; 
 }
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
+
 #progressbar li.active:before,  #progressbar li.active:after{
     background: #485461;
     color: #ccc;
