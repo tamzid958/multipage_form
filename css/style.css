@@ -13,7 +13,7 @@ body {
    
 }
 #msform {
-	width: 900px;
+	width: 50%;
 	margin: 50px auto;
 	text-align: center;
     position: relative;
@@ -384,3 +384,42 @@ a:hover{
 	text-decoration: none;
 	color:teal;
 }
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+  
+	
+	#msform {
+		width: 80%;
+	}
+	.creator{
+	left: -4px;
+
+	}
+  }
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+	
+	#msform {
+		width: 80%;
+	}
+	.creator{
+	left: -44px;
+
+	}
+  }
+  @media (max-width: 767px) {
+  
+	#msform {
+		width: 100%;
+	}
+	.creator{
+		left: -75px;
+		top:210px;
+	
+		}
+	
+  }
+  
