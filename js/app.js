@@ -53,20 +53,62 @@ function validateStep1()
   if (lname.value == "")                                  
   { 
       window.alert("Please enter your Last name."); 
-      fname.focus(); 
+      lname.focus(); 
       return false; 
   } 
   if (company.value == "")                                  
   { 
       window.alert("Please enter your company name."); 
-      fname.focus(); 
+      company.focus(); 
       return false; 
   } 
 
   if (address1.value == "")                                  
   { 
       window.alert("Please enter your Address."); 
-      fname.focus(); 
+      address1.focus(); 
+      return false; 
+  } 
+
+  if (city.value == "")                                  
+  { 
+      window.alert("Please enter your City."); 
+      city.focus(); 
+      return false; 
+  } 
+
+  if (state.value == "")                                  
+  { 
+      window.alert("Please enter your state."); 
+      state.focus(); 
+      return false; 
+  } 
+
+  if (zip.value == "")                                  
+  { 
+      window.alert("Please enter your zip."); 
+      zip.focus(); 
+      return false; 
+  } 
+
+  if (country.value == "")                                  
+  { 
+      window.alert("Please enter your country."); 
+      country.focus(); 
+      return false; 
+  } 
+
+  if (email.value == "")                                  
+  { 
+      window.alert("Please enter your Email."); 
+      email.focus(); 
+      return false; 
+  } 
+
+  if (city.value == "")                                  
+  { 
+      window.alert("Please enter your City."); 
+      city.focus(); 
       return false; 
   } 
   
