@@ -26,6 +26,8 @@ $(document).ready(function(){
     }).change();   
   }
 
+  
+
 );
 
 function validateStep1()
@@ -47,7 +49,7 @@ function validateStep1()
       fname.focus();
       return false; 
   } 
- 
+
   if (lname.value == "")                                  
   { 
       window.alert("Please enter your Last name."); 
@@ -82,4 +84,3 @@ function validateStep1()
   window.open('./second.html', '_self');
   return true;
 }
-
