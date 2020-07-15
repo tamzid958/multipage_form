@@ -384,17 +384,3 @@ a:hover{
 	text-decoration: none;
 	color:teal;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-	#msform {
-		width: 800px;
-	}
-	
-  }
-
-@media (max-width: 765)
-{
-	#msform {
-		width: 500px;
-	}
-}
