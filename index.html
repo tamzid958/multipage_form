@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Donor Information</title>
+</head>
+<body>
+
+    
+    <form id="msform" action="./action.php">
+        <ul id="progressbar">
+            <li class="active">Donor Information</li>
+            <li>Honorarirum and Memorial Donation Information</li>
+            <li>Additional Information</li>
+            <li>Confirmation</li>
+            <li>Thank You!</li>
+        </ul>
+
+<fieldset>
+    <h2 class="fs-title">Fillup basic Information</h2>
+    <h3 class="fs=subtitle">This is step 1</h3><br>
+    <input type="text" name="fname" placeholder="First Name" required/>
+    <input type="text" name="lname" placeholder="Last Name" required/>
+    <input type="text" name="company" placeholder="Company Name" required/>
+    <input type="text" name="address1" placeholder="Address 1" required/>
+    <input type="text" name="address2" placeholder="Address 2" required/>
+    <input type="text" name="city" placeholder="City" required/>
+    <select name="state" id="state" required>
+        <option class="others" value="" disabled selected>Select your state</option>
+        <option class="others" value="AL">Alabama</option>
+        <option class="others" value="AK">Alaska</option>
+        <option class="others" value="AZ">Arizona</option>
+    </select>				
+    <input type="text" name="zip" placeholder="Zip Code"/>
+    <select name="country" id="country" required>
+        <option class="others" value="" disabled selected>Select your Country</option>
+        <option class="others" value="Afghanistan">Afghanistan</option>
+        <option class="others" value="Åland Islands">Åland Islands</option>
+        <option class="others" value="Albania">Albania</option>
+    </select>	              
+
+    <input type="tel" name="tel" placeholder="Phone Number" required/>
+    <input type="tel" name="fax" placeholder="Fax Number" required/>
+    <input type="email" name="email" placeholder="Email Address" required/>
+    
+    <div class="selector"> 
+    <label for="Donation">Donation</label>
+    <div id="Donation" class="controls">
+    <input type="radio" value="none" name="donation" required checked>none
+    <input type="radio" value="50" name="donation"> 50$
+    <input type="radio" value="75" name="donation"> 75$
+    <input type="radio" value="100" name="donation"> 100$
+    <input type="radio" value="250" name="donation"> 250$
+    <input type="radio" value="other" id="DonationOther" name="donation"> other
+    </div>
+  <input style="display: none;" type="number" name="otherDonation" placeholder="Donation Amount" id="otherDonation"/>
+  
+  <label for="recurring" >Recurring Donation</label>
+ 
+  
+  <label class="b-contain">
+	<span>I am interested in giving on a regular basis.</span>
+	<input type="checkbox" class="bcheck" name="regulardonate" value="yes"> 
+	<div class="b-input"></div>
+   </label>
+ 
+ 
+
+  <div class="div1">
+    <span>Monthly</span>
+  <input   type="number" name="dollar" placeholder="Credit Card Dollar $"/><span>for</span>
+  <input  type="number" name="months" placeholder="months" />
+   </div> 
+</div> 
+<a href="./second.html">
+   <input type="button" name="next" class="next action-button"  value="Next" />
+</a>
+
+</fieldset>
+<p class="creator">Created by Tamzid Ahmed</p>
+<p><i class="fa fa-lock" aria-hidden="true"></i> Donate Online with Confidence.You are in secure server. <br>
+    If you have any problem, please contact <a href="https://www.google.com" target="_blank"> support. </a>
+</p> 
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+<script language="JavaScript" type="text/javascript" src="./js/app.js"></script>
+
+
+</form>
+ 
+</body>
+</html>

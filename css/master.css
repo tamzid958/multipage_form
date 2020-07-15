@@ -1,0 +1,14 @@
+body{
+    animation: slide 2s forwards;
+}
+
+@keyframes slide{
+    from{
+        opacity: 0;
+       
+    }
+    to{
+        opacity: 1;
+        
+    }
+}

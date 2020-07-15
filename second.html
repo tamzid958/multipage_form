@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Honorarirum and Memorial Donation Information</title>
+</head>
+<body>
+    <form id="msform" action="/action_page.php">
+        <ul id="progressbar">
+            <li class="active">Donor Information</li>
+            <li class="active">Honorarirum and Memorial Donation Information</li>
+            <li>Additional Information</li>
+            <li>Confirmation</li>
+            <li>Thank You!</li>
+        </ul>
+
+        <fieldset>
+
+            <h2 class="fs-title">Honorarirum and Memorial Donation Information</h2>
+            <h3 class="fs=subtitle">This is step 2</h3><br>
+            <div class="selector"> 
+                <label for="Donation">I would like to make this dontation</label>
+                <div id="Donation" class="controls3">
+                <input type="radio" value="honor" name="Honorarirum"> <span> To Honor </span>
+                <input type="radio" value="memory" name="Honorarirum"><span>In Memory of</span>
+                </div>
+                
+                <input type="text" name="name" placeholder="Full Name" />
+                <input type="text" name="acknowledge" placeholder="Acknowledge Donation to"/>
+                <input type="text" name="address3" placeholder="Address"/>
+                <input type="text" name="city" placeholder="City" />
+                <select name="state" id="state" required>
+                    <option class="others" value="" disabled selected>Select your state</option>
+                    <option class="others" value="AL">Alabama</option>
+                    <option class="others" value="AK">Alaska</option>
+                    <option class="others" value="AZ">Arizona</option>
+                </select>
+                <input type="text" name="zip" placeholder="Zip Code"/>
+           </div>
+           <a href="./index.html">
+           <input type="button" name="previous" class="previous action-button" value="Previous" />
+           </a>
+           <a href="./third.html">
+            <input type="button" name="next" class="next action-button" value="Next" />
+        </a>
+        </fieldset>
+        <p class="creator">Created by Tamzid Ahmed</p>
+        <p><i class="fa fa-lock" aria-hidden="true"></i> Donate Online with Confidence.You are in secure server. <br>
+            If you have any problem, please contact <a href="https://www.google.com" target="_blank"> support. </a>
+        </p> 
+           <br>
+
+ 
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+       
+    </form>
+
+
+</body>
+</html>
