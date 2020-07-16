@@ -121,8 +121,8 @@ function validateStep1()
         return false;    
       }
    
-    }      
-
-  window.open('./second.html', '_self');
-  return true;
+    }               
+    
+    window.open('./second.html', '_self');
+  return true;   
 }
