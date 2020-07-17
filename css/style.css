@@ -23,14 +23,14 @@ body {
 
 	#msform {
 		max-width: 900px;
-		margin: auto;
+	
 	}
 }
 
 @media screen and (max-width: 600px)  {
 	#msform {
 		max-width: 600px;
-		margin: auto;
+	
 	}
 }
 #msform fieldset {
