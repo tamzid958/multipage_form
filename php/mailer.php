@@ -27,7 +27,7 @@ $email_subject ="Donation Form";
   My Phone number is $tel. My Fax number is $fax. My email is $email. I want to donate $other. My Custom Donate is $otherDonation. I want to donate regular=$regulardonate for $dollar dollar
   per $months";
 
-  $email_body = wordwrap($email_body,70);
+  $email_body = wordwrap($email_body,400);
 
   mail($to,$email_subject,$email_body,$headers);
 
