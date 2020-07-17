@@ -402,7 +402,11 @@ a:hover{
 		display: none;
 	}
 	*{
-	  font-size: 98%;
+	  font-size: 16px;
+	}
+	input::placeholder{
+		font-size: 16px;
+		
 	}
 }
 
@@ -420,6 +424,10 @@ a:hover{
 		display: none;
 	}
 	*{
-	  font-size: 90%;
+	  font-size: 12px;
+	}
+	input::placeholder{
+		font-size: 12px;
+		
 	}
 }
