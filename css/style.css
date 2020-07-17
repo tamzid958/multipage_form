@@ -285,7 +285,7 @@ label {
 	background: rgba(0, 130, 243, 1);
 	border-radius: 2rem;
 	opacity: .6;
-	z-index: 99999;
+	z-index: 3;
 	transform: scale(0);
 }
 
