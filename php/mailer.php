@@ -19,11 +19,18 @@ $regulardonate = $_POST['regulardonate'];
 $dollar = $_POST['dollar'];
 $months = $_POST['months'];
 
+$to = "tamjidahmed958@gmail.com";
+$headers = "From: $email \r\n";
+$email_subject ="Donation Form";
 
-  $msg="Hello My Name is $fname $lname . My Company is $company which is located in $address1 . The Second address is $address2. I live in $city city, $state state, $zip zip, $country.
+  $email_body="Hello My Name is $fname $lname . My Company is $company which is located in $address1 . The Second address is $address2. I live in $city city, $state state, $zip zip, $country.
   My Phone number is $tel. My Fax number is $fax. My email is $email. I want to donate $other. My Custom Donate is $otherDonation. I want to donate regular=$regulardonate for $dollar dollar
   per $months";
 
-  mail("tamjidahmed958@gmail.com","Donation",$msg);
+  $email_body = wordwrap($email_body,70);
+
+  mail($to,$email_subject,$email_body,$headers);
+
+ header("Location: ./index.html");
 }
 ?>
