@@ -34,9 +34,7 @@ body {
 	border:solid 2px white;
 	position: relative;
 }
-#msform fieldset:not(:first-of-type) {
-	display: none;
-}
+
 #msform input, #msform select, #msform textarea {
 	padding: 15px;
 	border: 1px solid #ccc;
