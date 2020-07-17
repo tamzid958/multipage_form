@@ -3,7 +3,7 @@
     margin: 0; 
     padding: 0;
     color: white;
-	overflow-x: hidden;
+	
 	
 }
 body {
@@ -23,14 +23,14 @@ body {
 
 	#msform {
 		max-width: 900px;
-	
+	    overflow-x: hidden;
 	}
 }
 
 @media screen and (max-width: 480px)  {
 	#msform {
 		max-width: 480px;
-	
+	    overflow-x: hidden;
 	}
 }
 #msform fieldset {
