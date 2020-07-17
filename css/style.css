@@ -19,7 +19,7 @@ body {
     position: relative;
 }
 
-@media screen and (min-width: 600px) and (max-width: 992px) {
+@media screen and (min-width: 481px) and (max-width: 992px) {
 
 	#msform {
 		max-width: 900px;
@@ -27,9 +27,9 @@ body {
 	}
 }
 
-@media screen and (max-width: 600px)  {
+@media screen and (max-width: 480px)  {
 	#msform {
-		max-width: 600px;
+		max-width: 480px;
 	
 	}
 }
