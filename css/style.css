@@ -19,20 +19,6 @@ body {
     position: relative;
 }
 
-@media screen and (min-width: 481px) and (max-width: 992px) {
-
-	#msform {
-		max-width: 900px;
-	    overflow-x: hidden;
-	}
-}
-
-@media screen and (max-width: 480px)  {
-	#msform {
-		max-width: 480px;
-	    overflow-x: hidden;
-	}
-}
 #msform fieldset {
 	background: white;
 	border: 0 none;
@@ -370,10 +356,10 @@ label {
 .controls3
 {
     width: 100%;
-    display: inline-flex;
+	display: inline-flex;
 }
 .controls3 span{
-    width: 100%;
+	width: 100%;
 }
 
 .creator{
@@ -401,3 +387,39 @@ a:hover{
 }
 
   
+@media screen and (min-width: 481px) and (max-width: 992px) {
+
+	#msform {
+		max-width: 900px;
+	    overflow-x: hidden;
+	}
+	#msform fieldset {
+		margin:0%;
+		width: 100%;
+	}
+	.creator
+	{
+		display: none;
+	}
+	*{
+	  font-size: 98%;
+	}
+}
+
+@media screen and (max-width: 480px)  {
+	#msform {
+		max-width: 480px;
+	    overflow-x: hidden;
+	}
+	#msform fieldset {
+		margin:0%;
+		width: 100%;
+	}
+	.creator
+	{
+		display: none;
+	}
+	*{
+	  font-size: 90%;
+	}
+}
