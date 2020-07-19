@@ -342,7 +342,7 @@ label {
 	visibility: hidden;
 }
 .div1{
-    width: 100%;
+    max-width: 100%;
     display: inline-flex;
 }
 .div1 span{
