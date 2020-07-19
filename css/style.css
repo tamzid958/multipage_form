@@ -342,7 +342,7 @@ label {
 	visibility: hidden;
 }
 .div1{
-    max-width: 100%;
+    width: 100%;
     display: inline-flex;
 }
 .div1 span{
@@ -429,5 +429,9 @@ a:hover{
 	input::placeholder{
 		font-size: 12px;
 		
+	}
+	.div1{
+		max-width: 100%;
+		display: inline-flex;
 	}
 }
