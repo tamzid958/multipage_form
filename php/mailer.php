@@ -2,7 +2,7 @@
 
 global $fname,$lname,$company,$address1,$address2,$city,$state,$zip,$country,$tel,$fax,$email,$donation,$otherDonation,$regulardonate,$dollar,$months,$Honorarirum,$name,$acknowledge,$address3,
 $city2, $state2,$zip2, $coname, $anonymous,$mail_gift, $not_mail, $comment, $contact_mail, $contact_pmail, $contact_tel, $contact_fax,$newsletter_mail,$newsletter_pmail,$volunteer;
-$filename ="../php/dump.txt";
+
 if(isset($_POST['step1']))
 {
      $fname =  $_POST['fname'];
@@ -23,8 +23,6 @@ if(isset($_POST['step1']))
      $dollar =$_POST['dollar'];
      $months =$_POST['months'];
 
-file_put_contents($filename,$fname);
-
 header ("Location: ../second.html");
 }
 
@@ -38,7 +36,7 @@ else if(isset($_POST['step2']))
      $city2 =$_POST['city2'];
      $state2 =$_POST['state2'];
      $zip2 = $_POST['zip2'];
-file_put_contents($filename,$Honorarirum);
+
  header ("Location: ../third.html");
 }
 else if(isset($_POST['step3']))
@@ -56,7 +54,6 @@ else if(isset($_POST['step3']))
      $newsletter_pmail =$_POST['newsletter_pmail'];
      $volunteer=$_POST['volunteer'];
 
- file_put_contents($filename,$coname);
  header ("Location: ../confirmation.html");
 }
 
