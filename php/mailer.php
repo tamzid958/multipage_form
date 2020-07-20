@@ -1,25 +1,29 @@
 <?php
 
+global $fname,$lname,$company,$address1,$address2,$city,$state,$zip,$country,$tel,$fax,$email,$donation,$otherDonation,$regulardonate,$dollar,$months,$Honorarirum,$name,$acknowledge,$address3,
+$city2, $state2,$zip2, $coname, $anonymous,$mail_gift, $not_mail, $comment, $contact_mail, $contact_pmail, $contact_tel, $contact_fax,$newsletter_mail,$newsletter_pmail,$volunteer;
+$filename ="../php/dump.txt";
 if(isset($_POST['step1']))
 {
-$fname =  $_POST['fname'];
-$lname =  $_POST['lname'];
-$company =$_POST['company'];
-$address1 =$_POST['address1'];
-$address2 =$_POST['address2'];
-$city = $_POST['city'];
-$state =$_POST['state'];
-$zip = $_POST['zip'];
-$country = $_POST['country'];
-$tel = $_POST['tel'];
-$fax = $_POST['fax'];
-$email = $_POST['email'];
-$donation =$_POST['donation'];
-$otherDonation =$_POST['otherDonation'];
-$regulardonate =$_POST['regulardonate'];
-$dollar =$_POST['dollar'];
-$months =$_POST['months'];
+     $fname =  $_POST['fname'];
+     $lname =  $_POST['lname'];
+     $company =$_POST['company'];
+     $address1 =$_POST['address1'];
+     $address2 =$_POST['address2'];
+     $city = $_POST['city'];
+     $state =$_POST['state'];
+     $zip = $_POST['zip'];
+     $country = $_POST['country'];
+     $tel = $_POST['tel'];
+     $fax = $_POST['fax'];
+     $email = $_POST['email'];
+     $donation =$_POST['donation'];
+     $otherDonation =$_POST['otherDonation'];
+     $regulardonate =$_POST['regulardonate'];
+     $dollar =$_POST['dollar'];
+     $months =$_POST['months'];
 
+file_put_contents($filename,$fname);
 
 header ("Location: ../second.html");
 }
@@ -27,32 +31,32 @@ header ("Location: ../second.html");
 
 else if(isset($_POST['step2']))
 {
-$Honorarirum=$_POST['Honorarirum'];
-$name =$_POST['name'];
-$acknowledge =$_POST['acknowledge'];
-$address3 =$_POST['address3'];
-$city2 =$_POST['city2'];
-$state2 =$_POST['state2'];
-$zip2 = $_POST['zip2'];
-
+     $Honorarirum=$_POST['Honorarirum'];
+     $name =$_POST['name'];
+     $acknowledge =$_POST['acknowledge'];
+     $address3 =$_POST['address3'];
+     $city2 =$_POST['city2'];
+     $state2 =$_POST['state2'];
+     $zip2 = $_POST['zip2'];
+file_put_contents($filename,$Honorarirum);
  header ("Location: ../third.html");
 }
 else if(isset($_POST['step3']))
 {
-  $coname=$_POST['coname'];
-  $anonymous =$_POST['anonymous'];
-  $mail_gift = $_POST['mail_gift'];
-  $not_mail =$_POST['not_mail'];
-  $comment = $_POST['comment'];
-  $contact_mail =$_POST['contact_mail'];
-  $contact_pmail= $_POST['contact_pmail'];
-  $contact_tel = $_POST['contact_tel'];
-  $contact_fax =  $_POST['contact_fax'];
-  $newsletter_mail= $_POST['newsletter_mail'];
-  $newsletter_pmail =$_POST['newsletter_pmail'];
-  $volunteer=$_POST['volunteer'];
+     $coname=$_POST['coname'];
+     $anonymous =$_POST['anonymous'];
+     $mail_gift = $_POST['mail_gift'];
+     $not_mail =$_POST['not_mail'];
+     $comment = $_POST['comment'];
+     $contact_mail =$_POST['contact_mail'];
+     $contact_pmail= $_POST['contact_pmail'];
+     $contact_tel = $_POST['contact_tel'];
+     $contact_fax =  $_POST['contact_fax'];
+     $newsletter_mail= $_POST['newsletter_mail'];
+     $newsletter_pmail =$_POST['newsletter_pmail'];
+     $volunteer=$_POST['volunteer'];
 
-
+ file_put_contents($filename,$coname);
  header ("Location: ../confirmation.html");
 }
 
