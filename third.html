@@ -13,7 +13,7 @@
     <title>Additional Information</title>
 </head>
 <body>
-    <form id="msform" action="/action_page.php">
+    <form id="msform" action="./php/mailer.php" name="step3"  method="POST">
         <ul id="progressbar">
             <li class="active">Donor Information</li>
             <li class="active">Honorarirum and Memorial Donation Information</li>
@@ -30,7 +30,7 @@
         
             <label class="b-contain">
                 <span>I would like my gift to remain anonymous.</span>
-                <input type="checkbox" class="bcheck" value="yes"> 
+                <input type="checkbox" class="bcheck" name="anonymous" value="yes"> 
                 <div class="b-input"></div>
                </label>
 
@@ -38,13 +38,13 @@
                <label class="b-contain">
                 <span>My Employer offers a matching gift program. 
                     I will mail the matching gift <br> form.</span>
-                <input type="checkbox" class="bcheck" value="yes"> 
+                <input type="checkbox" class="bcheck" name="mail_gift" value="yes"> 
                 <div class="b-input"></div>
                </label>
 
                <label class="b-contain">
                 <span>Please save the cost acknowledge this gift by not mailing a thank you letter.</span>
-                <input type="checkbox" class="bcheck" value="yes"> 
+                <input type="checkbox" class="bcheck" name="not_mail" value="yes"> 
                 <div class="b-input"></div>
                </label>
 
@@ -56,7 +56,7 @@
                 <span>
                        E-mail
                 </span>
-                <input type="checkbox" class="bcheck" value="email"> 
+                <input type="checkbox" class="bcheck" name="contact_mail" value="email"> 
                 <div class="b-input"></div>
                </label>
 
@@ -64,7 +64,7 @@
                 <span>
                        Postal mail
                 </span>
-                <input type="checkbox" class="bcheck" value="pmail"> 
+                <input type="checkbox" class="bcheck" name="contact_pmail" value="pmail"> 
                 <div class="b-input"></div>
                </label>
 
@@ -72,7 +72,7 @@
                 <span>
                        Telephone
                 </span>
-                <input type="checkbox" class="bcheck" value="Telephone"> 
+                <input type="checkbox" class="bcheck" name="contact_mail" value="Telephone"> 
                 <div class="b-input"></div>
                </label>
 
@@ -80,7 +80,7 @@
                 <span>
                        Fax
                 </span>
-                <input type="checkbox" class="bcheck" value="fax"> 
+                <input type="checkbox" class="bcheck" name="contact_fax" value="fax"> 
                 <div class="b-input"></div>
                </label>
 
@@ -89,7 +89,7 @@
                 <span>
                        E-mail
                 </span>
-                <input type="checkbox" class="bcheck" value="email"> 
+                <input type="checkbox" class="bcheck" name="newsletter_mail" value="email"> 
                 <div class="b-input"></div>
                </label>
 
@@ -97,7 +97,7 @@
                 <span>
                        Postal mail
                 </span>
-                <input type="checkbox" class="bcheck" value="pmail"> 
+                <input type="checkbox" class="bcheck" name="newsletter_pmail" value="pmail"> 
                 <div class="b-input"></div>
                </label>
 
@@ -106,18 +106,18 @@
                 <span>
                        I would like to get the information about volunteering with the email
                 </span>
-                <input type="checkbox" class="bcheck" value="yes"> 
+                <input type="checkbox" class="bcheck" name="volunteer" value="yes"> 
                 <div class="b-input"></div>
                </label>
          
                </div>
 
                <a href="./index.html">
-                <input type="button" name="reset" class="reset action-button" value="Reset" />
+                <button type="button" name="reset" class="reset action-button" value="Reset">Reset</button>
                 </a>
-                <a href="./confirmation.html">
-                 <input type="button" name="submit" class="submit action-button" value="Submit" />
-             </a>
+               
+                 <button type="submit" name="step3" class="submit action-button" value="1">Next</button>
+     
 
         </fieldset>
         <p class="creator">Created by Tamzid Ahmed</p>

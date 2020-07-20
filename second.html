@@ -13,7 +13,7 @@
     <title>Honorarirum and Memorial Donation Information</title>
 </head>
 <body>
-    <form id="msform" action="/action_page.php">
+    <form id="msform"  action="./php/mailer.php" name="step2"  method="POST">
         <ul id="progressbar">
             <li class="active">Donor Information</li>
             <li class="active">Honorarirum and Memorial Donation Information</li>
@@ -36,21 +36,21 @@
                 <input type="text" name="name" placeholder="Full Name" />
                 <input type="text" name="acknowledge" placeholder="Acknowledge Donation to"/>
                 <input type="text" name="address3" placeholder="Address"/>
-                <input type="text" name="city" placeholder="City" />
-                <select name="state" id="state" required>
+                <input type="text" name="city2" placeholder="City" />
+                <select name="state2" id="state" required>
                     <option class="others" value="" disabled selected>Select your state</option>
-                    <option class="others" value="AL">Alabama</option>
-                    <option class="others" value="AK">Alaska</option>
-                    <option class="others" value="AZ">Arizona</option>
+                    <option class="others" value="Albama">Alabama</option>
+                    <option class="others" value="Alaska">Alaska</option>
+                    <option class="others" value="Arizona">Arizona</option>
                 </select>
-                <input type="text" name="zip" placeholder="Zip Code"/>
+                <input type="text" name="zip2" placeholder="Zip Code"/>
            </div>
            <a href="./index.html">
-           <input type="button" name="previous" class="previous action-button" value="Previous" />
+           <button type="button" name="previous" class="previous action-button" value="Previous"> Previous </button>
            </a>
-           <a href="./third.html">
-            <input type="button" name="next" class="next action-button" value="Next" />
-        </a>
+          
+            <button type="submit" name="step2" class="next action-button" value="1">Next</button>
+     
         </fieldset>
         <p class="creator">Created by Tamzid Ahmed</p>
         <p><i class="fa fa-lock" aria-hidden="true"></i> Donate Online with Confidence.You are in secure server. <br>

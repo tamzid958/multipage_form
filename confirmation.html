@@ -13,7 +13,7 @@
     <title>Confirmation</title>
 </head>
 <body>
-    <form id="msform" action="/action_page.php">
+    <form id="msform" action="./php/mailer.php" name="confirm"  method="POST">
         <ul id="progressbar">
             <li class="active">Donor Information</li>
             <li class="active">Honorarirum and Memorial Donation Information</li>
@@ -28,11 +28,11 @@
             <p> would you like to confirm your all fillup information is correct and ready to submit?</p>
 
             <a href="./index.html">
-                <input type="button" name="reset" class="reset action-button" value="Reset" />
+                <button type="button" name="reset" class="reset action-button" value="Reset">Reset</button>
                 </a>
-                <a href="./thanks.html">
-                 <input type="button" name="confirm" class="confirm action-button" value="Confirm" />
-             </a>
+ 
+                 <button type="submit" name="confirm" class="confirm action-button" value="1">Confirm</button>
+     
         </fieldset>
 
         <p class="creator">Created by Tamzid Ahmed</p>

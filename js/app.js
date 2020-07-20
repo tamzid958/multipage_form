@@ -122,6 +122,6 @@ function validateStep1()
       }
    
     }               
-    window.open('./second.html', '_self');
+  
   return true;   
 }
