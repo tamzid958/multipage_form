@@ -1,8 +1,5 @@
 <?php
 
-global $fname,$lname,$company,$address1,$address2,$city,$state,$zip,$country,$tel,$fax,$email,$donation,$otherDonation,$regulardonate,$dollar,$months,$Honorarirum,$name,$acknowledge,$address3,
-$city2, $state2,$zip2, $coname, $anonymous,$mail_gift, $not_mail, $comment, $contact_mail, $contact_pmail, $contact_tel, $contact_fax,$newsletter_mail,$newsletter_pmail,$volunteer;
-
 if(isset($_POST['step1']))
 {
      $fname =  $_POST['fname'];
@@ -26,8 +23,7 @@ if(isset($_POST['step1']))
 header ("Location: ../second.html");
 }
 
-
-else if(isset($_POST['step2']))
+ if(isset($_POST['step2']))
 {
      $Honorarirum=$_POST['Honorarirum'];
      $name =$_POST['name'];
@@ -39,7 +35,7 @@ else if(isset($_POST['step2']))
 
  header ("Location: ../third.html");
 }
-else if(isset($_POST['step3']))
+if(isset($_POST['step3']))
 {
      $coname=$_POST['coname'];
      $anonymous =$_POST['anonymous'];
@@ -57,7 +53,7 @@ else if(isset($_POST['step3']))
  header ("Location: ../confirmation.html");
 }
 
-else if(isset($_POST['confirm']))
+if(isset($_POST['confirmall']))
 {
  
 $to = "tamjidahmed958@gmail.com";
@@ -103,13 +99,12 @@ $email_subject ="Donation Form";
 
   mail($to, $email_subject,$email_body);
   mail($cc, $email_subject,$email_body);
-  var_dump($_POST);
   header ("Location: ../thanks.html");
+
+  echo "$fname,$lname,$company,$address1,$address2,$city,$state,$zip,$country,$tel,$fax,$email,$donation,$otherDonation,$regulardonate,$dollar,$months,$Honorarirum,$name,$acknowledge,$address3,
+  $city2, $state2,$zip2, $coname, $anonymous,$mail_gift, $not_mail, $comment, $contact_mail, $contact_pmail, $contact_tel, $contact_fax,$newsletter_mail,$newsletter_pmail,$volunteer
+  ";
+ 
 }
 
-else{
-  var_dump($_POST);
-  echo "error occured";
-
-}
   ?>
